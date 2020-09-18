@@ -1,0 +1,122 @@
+.m-nav {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 2px 15px 0.5px rgba(0, 0, 0, 0.1);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  &--row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+
+  &__humbergerIcon {
+    display: none;
+    position: absolute;
+    right: 70px;
+    top: 11px;
+    z-index: 9;
+
+    &:hover {
+      span:first-child {
+        width: 40px;
+        height: 40px;
+        left: 0;
+        top: 0;
+        transition: all 0.35s;
+        cursor: pointer;
+      }
+    }
+
+    span {
+      position: absolute;
+      transition: all 0.35s;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      background-color: #163f5b;
+      top: 50%;
+
+      &:first-child {
+        height: 30px;
+        width: 30px;
+        background: #5cbcd2;
+        z-index: 9;
+        left: 5px;
+        top: 5px;
+      }
+    }
+  }
+
+  &__navigate {
+    position: relative;
+    margin-right: auto;
+    padding-left: 47px;
+    width: 100%;
+
+    &--link {
+      margin: 5px;
+      padding: 5px;
+      text-decoration: none;
+      font-family: 'Nunito Sans', sans-serif;
+      font-size: 16px;
+      color: #262627;
+    }
+  }
+  &__auth {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-nav__humbergerIcon {
+    display: block;
+  }
+  .m-nav {
+    &__navigate {
+      position: fixed !important;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgb(255, 255, 255);
+      width: 100%;
+      transition: all 0.35s;
+      transform: translateX(100%);
+      padding-left: 14px;
+      z-index: 99;
+      padding-top: 20px;
+      &--show {
+        transform: translateX(0%);
+        width: 75%;
+      }
+    }
+    &__auth {
+      position: relative;
+      display: block;
+      border-top: 1px solid #eee;
+      padding: 23px 0px;
+      margin: 2rem auto;
+      text-align: center;
+    }
+  }
+  .m-nav__navigate--link {
+    display: inline-block;
+    width: 100%;
+  }
+  .overlay-mobile {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.3);
+    &--active {
+      position: fixed;
+      overflow: hidden;
+    }
+  }
+}

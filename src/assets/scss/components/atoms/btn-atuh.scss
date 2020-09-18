@@ -1,0 +1,22 @@
+.m-nav {
+  &__btnAuth {
+    border: none;
+    padding: 2px 21px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 9rem;
+    margin: 0 5px;
+    font-family: 'Nunito Sans', sans-serif;
+    background: none;
+    &:hover {
+      cursor: pointer;
+    }
+    &--register {
+      background: #fc8047;
+      color: #fff;
+    }
+    &--signIn {
+      color: #fc8047;
+    }
+  }
+}

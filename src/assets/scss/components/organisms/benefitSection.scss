@@ -1,0 +1,114 @@
+.benefit {
+  margin-top: 2rem;
+  font-family: 'Nunito Sans', sans-serif;
+  &__wrapper {
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    &--business {
+      left: 80px;
+      top: 135px;
+    }
+    &--intesive {
+      right: 100px;
+      top: 120px;
+      .benefit__contentInner {
+        width: 30%;
+      }
+    }
+    &--experience {
+      left: 800px;
+      top: 200px;
+    }
+    &--certificate {
+      top: 120px;
+      left: 1100px;
+      .benefit__contentInner {
+        width: 100%;
+      }
+    }
+  }
+  &__Title {
+    text-align: center;
+    font-weight: 400;
+  }
+  &__contentInner {
+    width: 50%;
+    &--body {
+      text-align: left;
+    }
+    &--header {
+      border-radius: 100px;
+      background: #fff;
+      box-shadow: 0 2px 15px 0.5px rgba(0, 0, 0, 0.1);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      img {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #benefit {
+    background-image: unset !important;
+  }
+  .benefit {
+    margin-top: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    &__isMobileRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__wrapper {
+      position: relative;
+    }
+    &__content {
+      position: unset !important;
+      width: 50%;
+      padding: 14px;
+    }
+    &__contentInner {
+      width: 100% !important;
+      &--header {
+        margin: auto;
+      }
+      &--body {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .benefit {
+    margin-top: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    &__isMobileRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &__wrapper {
+      position: relative;
+    }
+    &__content {
+      position: unset !important;
+      width: 100%;
+      padding: 14px;
+    }
+    &__contentInner {
+      width: 100% !important;
+      &--header {
+        margin: auto;
+      }
+      &--body {
+        text-align: center;
+      }
+    }
+  }
+}

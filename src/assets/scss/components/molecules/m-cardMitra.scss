@@ -1,0 +1,46 @@
+.m-cardMitra {
+  width: 25%;
+  padding: 23px;
+  &__title {
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+  }
+  &__desc {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+  }
+  &__inner {
+    border: 1px solid #e0e0e0;
+    height: 400px;
+    max-height: 390px;
+    min-height: 390px;
+    border-radius: 6px;
+    &--header {
+      width: 100%;
+      padding: 14px;
+      padding-top: 40px;
+      padding-bottom: 0;
+      text-align: center;
+      img {
+        width: 80px;
+        height: 74.4px;
+      }
+    }
+    &--body {
+      padding: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .m-cardMitra {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .m-cardMitra {
+    width: 100%;
+  }
+}

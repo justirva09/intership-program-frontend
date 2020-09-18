@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "baseUrl": "./src",
+    "sourceMap": true,
+    "paths": {
+      "components": ["./components"],
+      "components/atoms": ["./components/atoms"],
+      "components/molecules": ["./components/molecules"],
+      "components/organisms": ["./components/organisms"],
+      "containers": ["./containers"],
+      "libraries": ["./libraries"],
+      "assets": ["./assets"]
+    }
+  }
+}

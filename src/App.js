@@ -1,25 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navigation, View, Section, HeroSection, BenefitSection, MitraSection, CollabSection } from 'components';
+import { React } from 'libraries';
 
-function App() {
+const App = () => {
+  document.title = 'LatihID - Kolaborasi'
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <View className="App">
+      <Navigation />
+      <View className="main-apps" style={{paddingBottom: '2rem'}}>
+        <HeroSection />
+        <BenefitSection />
+        <MitraSection />
+        <CollabSection />
+      </View>
+    </View>
   );
 }
 
